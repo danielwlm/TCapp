@@ -1,0 +1,72 @@
+{
+  "id": 1,
+  "total": 10,
+  "title":"Sides and Appetizers Dishes",
+  "sub-title":"Side Appetizers and Desserts",
+  "result": [
+    {
+      "id": 1,
+      "picture": "img/demo.png",
+      "title": "BLACK BEANS",
+      "body": "Traditional black beans",
+      "tags": ["Side", "Black Beans"],
+      "price":["$3"]
+    }, {
+      "id": 2,
+      "picture": "img/demo.png",
+      "title": "GREEN RICE",
+      "body": "Fresh green rice",
+      "tags": ["Side", "Rice"],
+      "price": ["$3"]
+    }, {
+      "id": 3,
+      "picture": "img/demo.png",
+      "title": "HOUSE SALADS",
+      "body": "Fresh house salad served daily",
+      "tags": ["Side", "Salad"],
+      "price":["$5"]
+    }, {
+      "id": 4,
+      "picture": "img/demo.png",
+      "title": "PICO DE GALLO",
+      "body": "Traditional Pico De Gallo",
+      "tags": ["Side", "Pico De Gallo"],
+      "price":["$3"]
+    }, {
+      "id": 5,
+      "picture": "img/demo.png",
+      "title": "AVOCADO",
+      "body": "FRESH AVOCADO",
+      "tags": ["Side", "Avocado"],
+      "price":["$3"]
+    }, {
+      "id": 6,
+      "picture": "img/demo.png",
+      "title": "TORTILLAS",
+      "body": "Traditional Corn Tortillas",
+      "tags": ["Side", "Corn", "Tortillas"],
+      "price":["$2"]
+    }, {
+      "id": 7,
+      "picture": "img/demo.png",
+      "title": "ROASTED CORN MARIA GORDA",
+      "body": "Quince sauce and berries.",
+      "tags": ["Desserts", "Corn Gorda"],
+      "price":["$8"]
+    }, {
+      "id": 8,
+      "picture": "img/demo.png",
+      "title": "DULCE DE CALABAZA",
+      "body": "One of the most iconic sweet avors in Mexico’s traditional desserts, dulce de calabaza with vanilla ice cream.",
+      "tags": ["Desserts", "Traditional Dessert", "Sweet Vanilla"],
+      "price":["$8"]
+    }, {
+      "id": 9,
+      "picture": "img/demo.png",
+      "title": "ARROZ CON LECHE",
+      "body": "Warm rice pudding, syrupy apple slices and pecan pieces.",
+      "tags": ["Dessert", "Rice Pudding"],
+      "price":["$8"]
+    }
+  ]
+}

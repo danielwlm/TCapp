@@ -1,0 +1,4 @@
+<div class="well btn btn-success" role="button" ng-show="getItemCount()"><!-- Use ng-show to show if the items have been added to the cart -->
+            <!-- Display the subtotal followed by the number of items in the cart -->
+            {{ getCartSubtotal() | currency }} - {{ getItemCount() }} items
+</div>

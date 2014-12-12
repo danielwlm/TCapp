@@ -1,0 +1,30 @@
+<ons-page ng-controller="FoodMenuController">
+
+    <!--<ons-toolbar>-->
+        <!--<div class="left"><ons-back-button onclick="ons.slidingMenu.toggleMenu()"> Back</ons-back-button></div>-->
+        <!--<div class="centering-and-alignment" style="color:#fff;">Menu</div>-->
+    <!--</ons-toolbar>-->
+
+    <section style="padding: 10px;">
+
+        <!--<ons-row style="padding: 20px;">-->
+            <!--<input type="search" placeholder="Search" class="search-input" ng-model="search">-->
+        <!--</ons-row>-->
+
+        <div ng-repeat="item in getFoodMenu()" style="margin-top:20px;">
+
+                <!--<ons-col>-->
+
+                    <section style="padding: 0 10px; margin:5px;">
+                        <section class="home-grid">
+                            <div class="center grid-menu">
+
+                                    <a href="{{item.url}}" target="_blank" style="font-size:20px;"><ons-button class="center" style="text-align:left; margin:20px;padding:10px; width:100%;" ><strong>{{item.title}}</strong><br/><i>Served: {{item.time}}</i></ons-button></a>
+                            </div>
+                        </section>
+                    </section>
+
+        </div>
+    </section>
+    <img src="img/lets-talk-02-1024x183.png" alt="#"/>
+</ons-page>
