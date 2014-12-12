@@ -1,0 +1,37 @@
+<ons-page ng-controller="FoodMenuController">
+
+    <ons-toolbar>
+
+        <div class="left"><ons-back-button onclick="ons.slidingMenu.toggleMenu()"> Back</ons-back-button></div>
+        <div class="center" style="color:#fff;">Food Menu</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+        <div ng-repeat="item in food">
+            <ons-row style="padding: 0 0 10px 0;">
+                <!--<ons-col>-->
+                    <!--<section style="padding: 0 10px 0 0;">-->
+                        <!--<img ng-src="{{item.picture}}"alt="{{item.title}}" ng-click="showDetail($index)"/>-->
+                    <!--</section>-->
+                <!--</ons-col>-->
+                <ons-col>
+                    <section>
+                        <h3 class="title" ng-click="showDetail($index)">{{item.title}}</h3>
+                        <p ng-model="letterLimit">{{item.body | limitTo:letterLimit  }}...</p>
+                        <p ng-repeat="price in item.price">{{price}}</p>
+                        <p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>
+                            <span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>
+                        </p>
+                        <!--<add-to-order></add-to-order>-->
+                        <!--<ons-button ng:click="addItem()" modifier="medium--cta">Add to Order</ons-button>-->
+                        <!--<br/><br/>-->
+                        <!--<social-media></social-media>-->
+
+                    </section>
+                </ons-col>
+            </ons-row>
+            <hr/>
+        </div>
+    </section>
+
+</ons-page>

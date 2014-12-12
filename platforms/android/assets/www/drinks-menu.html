@@ -1,0 +1,32 @@
+<ons-page ng-controller="DrinkMenuController">
+
+    <ons-toolbar>
+        <div class="left"><ons-back-button> Back</ons-back-button></div>
+        <div class="center" style="color:#fff;">Drinks Menu</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+        <div ng-repeat="item in drink">
+            <ons-row style="padding: 0 0 10px 0;">
+                <ons-col>
+                    <section style="padding: 0 10px 0 0;">
+                        <img ng-src="{{item.picture}}"alt="{{item.title}}" ng-click="showDetail($index)"/>
+                    </section>
+                </ons-col>
+                <ons-col>
+                    <section>
+                        <h3 class="title" ng-click="showDetail($index)">{{item.title}}</h3>
+                        <p ng-model="letterLimit">{{item.body | limitTo:letterLimit  }}...</p>
+                        <span ng-repeat="price in item.price">{{price}}<br/></span><br/>
+                        <ons-button modifier="medium--cta">Add to Order</ons-button>
+                        <p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>
+                            <span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>
+                        </p>
+                    </section>
+                </ons-col>
+            </ons-row>
+            <hr/>
+        </div>
+    </section>
+
+</ons-page>

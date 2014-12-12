@@ -1,0 +1,86 @@
+<ons-navigator title="Navigator" var="appNavigator">
+    
+    <ons-page ng-controller="HomeController">
+        <!---->
+        <!--<ons-toolbar>-->
+            <!--<div class="left">-->
+            <!--<ons-toolbar-button ng-click="menu.toggleMenu()">-->
+            <!--<ons-icon icon="bars"></ons-icon>-->
+            <!--</ons-toolbar-button>-->
+            <!--</div>-->
+            <!--<div class="center">Tabachines Cocina</div>-->
+            <!--&lt;!&ndash;<img src="img/logo-white.png" alt="#" style="margin: 0 25%; width:50%;"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="right">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ons-toolbar-button ng-click="appNavigator.pushPage('settings.html', {title: 'Settings'})">&ndash;&gt;-->
+            <!--&lt;!&ndash;<ons-icon icon="gears"></ons-icon>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ons-toolbar-button>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</ons-toolbar>-->
+        <!--<ons-list>-->
+            <ons-col class="center" id="container">
+                <img class="center" src="img/flower.png" alt="flower" style="margin:10% 40% 1% 40%;padding:1%; width:20%;"/>
+
+
+                <!--<ons-col ng-controller="GalleryController">-->
+
+                    <!--<ons-scroller class="item w2">-->
+                        <!--<ul rn-carousel rn-carousel-auto-slide="default" >-->
+                            <!--<li ng-repeat="slide in slides">-->
+                                <!--<img ng-src="{{slide.picture}}"/>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                    <!--</ons-scroller>-->
+
+
+                    <!--<ons-scroller class="item">-->
+                        <!--<ul rn-carousel rn-carousel-auto-slide="default" >-->
+                            <!--<li ng-repeat="slide in slides">-->
+                                <!--<img ng-src="{{slide.picture}}"/>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                    <!--</ons-scroller>-->
+                    <!--<ons-scroller class="item w2">-->
+                        <!--<ul rn-carousel rn-carousel-auto-slide="default" >-->
+                            <!--<li ng-repeat="slide in slides">-->
+                                <!--<img ng-src="{{slide.picture}}"/>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                    <!--</ons-scroller>-->
+                    <!--<ons-scroller class="item">-->
+                        <!--<ul rn-carousel rn-carousel-auto-slide="default" >-->
+                            <!--<li ng-repeat="slide in slides">-->
+                                <!--<img ng-src="{{slide.picture}}"/>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                    <!--</ons-scroller>-->
+
+                <!--</ons-col>-->
+            </ons-col>
+
+            <div ng-repeat="item in items" ng-click="showDetail($index)" style="margin-top:40px;">
+
+                    <ons-button modifier="large" style="width:100%; margin:10px 0 10px;">
+                        <!--<ons-icon icon="{{item.icon}}" fixed-width="true"></ons-icon>-->
+                    <span><a href="{{item.link}}">{{item.title}}</a></span>
+                    </ons-button>
+
+            </div>
+        <!--<ons-button  modifier="large" style="margin:10px 0 10px;"><a style="color:#fff; text-decoration:none;" href="http://tabachines.staging.wpengine.com/menu/">Online Menu</a></ons-button>-->
+
+        <ons-button  modifier="large" style="width:100%; margin:10px 0 10px;"><a style="color:#fff; text-decoration:none;" onclick="window.open('http://tabachines.staging.wpengine.com/order-now/', 'target=_blank', 'location=yes'); return false;" href="http://tabachines.staging.wpengine.com/order-now/">Order Online</a></ons-button>
+
+        <ons-button  modifier="large" style="width:100%; margin:10px 0 10px;"><a style="color:#fff; text-decoration:none;" href="http://www.opentable.com/tabachines-cocina-reservations-los-angeles?rid=158194&restref=158194">Make a Reservations</a></ons-button>
+        <!--</ons-list>-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+                <!--<social-media></social-media>-->
+            <!--</div>-->
+        <!--</div>-->
+        <img src="img/lets-talk-02-1024x183.png" alt="#"/>
+    </ons-page>
+    
+</ons-navigator>

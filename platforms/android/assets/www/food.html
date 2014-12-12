@@ -1,0 +1,19 @@
+<ons-page ng-controller="FoodItemController">
+    <ons-toolbar>
+        <div class="left"><ons-back-button onclick="ons.slidingMenu.toggleMenu()"> Menu</ons-back-button></div>
+        <div class="center" style="color:#fff;">{{item.title}}</div>
+    </ons-toolbar>
+    <section style="padding: 10px;" ng-repeat="item in item.result">
+        <h2 class="title"  ng-click="show()">{{item.title}}</h2>
+        <hr/>
+
+            <!--<img ng-src="{{item.picture}}" alt="{{item.title}}" />-->
+        <!--<p>{{item.body}}</p>-->
+        <!--<p style="margin: 10px;" ng-repeat="price in item.price">{{price}} </p>-->
+        <!--<p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>-->
+            <!--<span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>-->
+        <!--</p>-->
+
+
+    </section>
+</ons-page>
