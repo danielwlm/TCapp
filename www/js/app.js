@@ -29,26 +29,26 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        var splashscreen;
+        //var splashscreen;
         document.addEventListener("deviceready", onDeviceReady, false);
         document.addEventListener("backbutton", onBackKeyDown, false);
-        function onDeviceReady() {
-            //navigator.splashscreen.show();
+        //function onDeviceReady() {
+        //    navigator.splashscreen.show();
+        //}
+        function onBackKeyDown(){
+            var sPath=window.location.pathname;
+            var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+            if(sPage == "index.html"){
+                e.preventDefault();
+//  Method to close Phonegap application
+                navigator.app.exitApp();
+
+
+            } else {
+                // Method to go back to previous page
+                navigator.app.backHistory();
+            }
         }
-//        function onBackKeyDown(){
-//            var sPath=window.location.pathname;
-//            var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-//            if(sPage == "index.html"){
-//                e.preventDefault();
-////  Method to close Phonegap application
-//                navigator.app.exitApp();
-//
-//
-//            } else {
-//                // Method to go back to previous page
-//                navigator.app.backHistory();
-//            }
-//        }
     },
     // deviceready Event Handler
     //
@@ -68,9 +68,9 @@ var app = {
         });
         //define tab or click event type on rool level (can be combined with modernizr)
         //iaEvent = "click";
-        //if (typeof navigator !== "undefined" && navigator.app) {
-        //    iaEvent = "tap";
-        //}
+        if (typeof navigator !== "undefined" && navigator.app) {
+            iaEvent = "tap";
+        }
         //$('.ext-link').each.bind(iaEvent, function() {
         //    if (typeof navigator !== "undefined" && navigator.app) {
         //        // Mobile device.
@@ -82,17 +82,17 @@ var app = {
         //    }
         //});
 
-        // Open any external link with InAppBrowser Plugin
-        //$(document).on('click', 'a[href^=http], a[href^=https]', function(e){
-        //
-        //    e.preventDefault();
-        //    var $this = $(this);
-        //    var target = $this.data('inAppBrowser') || '_blank';
-        //    //var ref = window.open('http://apache.org', '_blank', 'location=yes');
-        //
-        //    window.open($this.attr('href'), target);
-        //
-        //});
+      //  Open any external link with InAppBrowser Plugin
+        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
+
+            e.preventDefault();
+            var $this = $(this);
+            var target = $this.data('inAppBrowser') || '_blank';
+            //var ref = window.open('http://apache.org', '_blank', 'location=yes');
+
+            window.open($this.attr('href'), target);
+
+        });
 
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
@@ -135,15 +135,15 @@ var app = {
     app.controller('HomeController', function($scope, Data) {
 
 // Open any external link with InAppBrowser Plugin
-        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
-
-            e.preventDefault();
-            //var $this = $(this);
-            //var target = $this.data('inAppBrowser') || '_system';
-            //
-            //window.open($this.attr('href'), target);
-
-        });
+//        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
+//
+//            e.preventDefault();
+//            //var $this = $(this);
+//            //var target = $this.data('inAppBrowser') || '_system';
+//            //
+//            //window.open($this.attr('href'), target);
+//
+//        });
 
         $scope.items = Data.items;
 

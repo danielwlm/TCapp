@@ -35,20 +35,20 @@ var app = {
         function onDeviceReady() {
             //navigator.splashscreen.show();
         }
-        function onBackKeyDown(){
-            var sPath=window.location.pathname;
-            var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-            if(sPage == "index.html"){
-                e.preventDefault();
-//  Method to close Phonegap application
-                navigator.app.exitApp();
-
-
-            } else {
-                // Method to go back to previous page
-                navigator.app.backHistory();
-            }
-        }
+//        function onBackKeyDown(){
+//            var sPath=window.location.pathname;
+//            var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+//            if(sPage == "index.html"){
+//                e.preventDefault();
+////  Method to close Phonegap application
+//                navigator.app.exitApp();
+//
+//
+//            } else {
+//                // Method to go back to previous page
+//                navigator.app.backHistory();
+//            }
+//        }
     },
     // deviceready Event Handler
     //
@@ -138,10 +138,10 @@ var app = {
         $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
 
             e.preventDefault();
-            var $this = $(this);
-            var target = $this.data('inAppBrowser') || '_blank';
-
-            window.open($this.attr('href'), target);
+            //var $this = $(this);
+            //var target = $this.data('inAppBrowser') || '_system';
+            //
+            //window.open($this.attr('href'), target);
 
         });
 
@@ -205,17 +205,17 @@ var app = {
         $('.twiterNav').click(function() {
             window.open('twitter://user?screen_name=xerxesnoble', '_system', 'location=yes');
         });
-
-        // Open any external link with InAppBrowser Plugin
-        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
-
-            e.preventDefault();
-            var $this = $(this);
-            var target = $this.data('inAppBrowser') || '_blank';
-
-            window.open($this.attr('href'), target);
-
-        });
+        //
+        //// Open any external link with InAppBrowser Plugin
+        //$(document).on('click', 'a[href^=http], a[href^=https]', function(e){
+        //
+        //    e.preventDefault();
+        //    var $this = $(this);
+        //    var target = $this.data('inAppBrowser') || '_blank';
+        //
+        //    window.open($this.attr('href'), target);
+        //
+        //});
 
     });
     
@@ -284,54 +284,54 @@ var app = {
         };
 
     });
-    
-    // News Controller
-    app.controller('NewsController', function($scope, $http, NewsData) {
-        
-        $scope.news = [];
-        
-        $http({method: 'GET', url: NewsData.url}).
-        success(function(data, status, headers, config) {
-            $scope.news = data.result;
-            $scope.letterLimit = NewsData.letterLimit;
-        }).
-        error(function(data, status, headers, config) {
-
-        });
-        
-        $scope.showDetail = function(index) {
-        var selectedItem = $scope.news[index];
-        NewsData.selectedItem = selectedItem;
-        $scope.ons.navigator.pushPage('new.html', selectedItem);
-        }
-        
-        // getNews() function()
-        $scope.getNews = function() {
-            // Filter News by $scope.search
-            return $scope.news.filter(function(item) {
-                
-                // Filter News by Title
-                var itemDoesMatch = !$scope.search ||
-                item.title.toLowerCase().indexOf($scope.search.toLowerCase()) > -1;
-                
-                // Filter News by Title or Body
-                //var itemDoesMatch = !$scope.search ||
-                //item.title.toLowerCase().indexOf($scope.search.toLowerCase()) > -1 || 
-                //item.body.toLowerCase().indexOf($scope.search.toLowerCase()) > -1;
-                
-                return itemDoesMatch;
-            });
-        };
-
-        // Search Detail function()
-        $scope.showSearchDetail = function(index) {
-        var items = $scope.getNews();
-        var selectedItem = items[index];
-        NewsData.selectedItem = selectedItem;
-        $scope.ons.navigator.pushPage('new.html', selectedItem);
-        }
-        
-    });
+    //
+    //// News Controller
+    //app.controller('NewsController', function($scope, $http, NewsData) {
+    //
+    //    $scope.news = [];
+    //
+    //    $http({method: 'GET', url: NewsData.url}).
+    //    success(function(data, status, headers, config) {
+    //        $scope.news = data.result;
+    //        $scope.letterLimit = NewsData.letterLimit;
+    //    }).
+    //    error(function(data, status, headers, config) {
+    //
+    //    });
+    //
+    //    $scope.showDetail = function(index) {
+    //    var selectedItem = $scope.news[index];
+    //    NewsData.selectedItem = selectedItem;
+    //    $scope.ons.navigator.pushPage('new.html', selectedItem);
+    //    }
+    //
+    //    // getNews() function()
+    //    $scope.getNews = function() {
+    //        // Filter News by $scope.search
+    //        return $scope.news.filter(function(item) {
+    //
+    //            // Filter News by Title
+    //            var itemDoesMatch = !$scope.search ||
+    //            item.title.toLowerCase().indexOf($scope.search.toLowerCase()) > -1;
+    //
+    //            // Filter News by Title or Body
+    //            //var itemDoesMatch = !$scope.search ||
+    //            //item.title.toLowerCase().indexOf($scope.search.toLowerCase()) > -1 ||
+    //            //item.body.toLowerCase().indexOf($scope.search.toLowerCase()) > -1;
+    //
+    //            return itemDoesMatch;
+    //        });
+    //    };
+    //
+    //    // Search Detail function()
+    //    $scope.showSearchDetail = function(index) {
+    //    var items = $scope.getNews();
+    //    var selectedItem = items[index];
+    //    NewsData.selectedItem = selectedItem;
+    //    $scope.ons.navigator.pushPage('new.html', selectedItem);
+    //    }
+    //
+    //});
     // Food Menu Controller
     app.controller('FoodMenuController', function($scope, $http, FoodMenuData) {
 
@@ -421,145 +421,145 @@ var app = {
 
     });
 
-    
-    // Products Controller
-    app.controller('ProductsController', function($scope, $http, ProductsData) {
-        
-        $http({method: 'GET', url: ProductsData.url}).
-        success(function(data, status, headers, config) {
-            $scope.products = data.result;
-            $scope.letterLimit = ProductsData.letterLimit;
-        }).
-        error(function(data, status, headers, config) {
 
-        });
-        
-        $scope.showDetail = function(index) {
-        var selectedItem = $scope.products[index];
-        ProductsData.selectedItem = selectedItem;
-        $scope.ons.navigator.pushPage('product.html', selectedItem);
-        }
-
-    
+    //// Products Controller
+    //app.controller('ProductsController', function($scope, $http, ProductsData) {
+    //
+    //    $http({method: 'GET', url: ProductsData.url}).
+    //    success(function(data, status, headers, config) {
+    //        $scope.products = data.result;
+    //        $scope.letterLimit = ProductsData.letterLimit;
+    //    }).
+    //    error(function(data, status, headers, config) {
+    //
+    //    });
+    //
+    //    $scope.showDetail = function(index) {
+    //    var selectedItem = $scope.products[index];
+    //    ProductsData.selectedItem = selectedItem;
+    //    $scope.ons.navigator.pushPage('product.html', selectedItem);
+    //    }
+    //
+    //
    // RSS: Feeds Controller
-   app.controller('FeedsController', function($scope, $http, FeedData, FeedStorage) {
-
-        $scope.msg = "Loading...";
-        $scope.feeds = "";
-
-        $http({method: 'JSONP', url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + encodeURIComponent(FeedData.url)}).
-        success(function(data, status, headers, config) {
-
-            if (!data.responseData) {
-                $scope.data = FeedStorage.get();
-                $scope.msg = "Offline Mode - The device is unable to get the data.";
-
-                $scope.title = $scope.data.feed.title;
-                $scope.description = $scope.data.feed.description;
-                $scope.link = $scope.data.feed.link;
-                $scope.feeds = $scope.data.feed.entries;
-            } else {
-                $scope.title = data.responseData.feed.title;
-                $scope.description = data.responseData.feed.description;
-                $scope.link = data.responseData.feed.link;
-                $scope.feeds = data.responseData.feed.entries;
-
-                // Save feeds to the local storage
-                FeedStorage.save(data.responseData);
-
-                $scope.msg = "";
-            }
-
-        }).
-        error(function(data, status, headers, config) {
-
-        $scope.data = FeedStorage.get();
-        $scope.msg = 'Offline Mode - An error occured:' + status;
-
-        $scope.title = $scope.data.feed.title;
-        $scope.description = $scope.data.feed.description;
-        $scope.link = $scope.data.feed.link;
-        $scope.feeds = $scope.data.feed.entries;
-
-        });
-
-        var page = 1;
-        // Define the number of the feed results in the page
-        var pageSize = 5;
-
-        $scope.paginationLimit = function(data) {
-        return pageSize * page;
-        };
-
-        $scope.hasMoreItems = function() {
-        return page < ($scope.feeds.length / pageSize);
-        };
-
-        $scope.showMoreItems = function() {
-        page = page + 1;
-        };
-
-        $scope.showDetail = function(index) {
-        var selectedItem = $scope.feeds[index];
-        FeedData.selectedItem = selectedItem;
-        $scope.ons.navigator.pushPage('feed.html', selectedItem);
-        }
-
-   });
+   //app.controller('FeedsController', function($scope, $http, FeedData, FeedStorage) {
+   //
+   //     $scope.msg = "Loading...";
+   //     $scope.feeds = "";
+   //
+   //     $http({method: 'JSONP', url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + encodeURIComponent(FeedData.url)}).
+   //     success(function(data, status, headers, config) {
+   //
+   //         if (!data.responseData) {
+   //             $scope.data = FeedStorage.get();
+   //             $scope.msg = "Offline Mode - The device is unable to get the data.";
+   //
+   //             $scope.title = $scope.data.feed.title;
+   //             $scope.description = $scope.data.feed.description;
+   //             $scope.link = $scope.data.feed.link;
+   //             $scope.feeds = $scope.data.feed.entries;
+   //         } else {
+   //             $scope.title = data.responseData.feed.title;
+   //             $scope.description = data.responseData.feed.description;
+   //             $scope.link = data.responseData.feed.link;
+   //             $scope.feeds = data.responseData.feed.entries;
+   //
+   //             // Save feeds to the local storage
+   //             FeedStorage.save(data.responseData);
+   //
+   //             $scope.msg = "";
+   //         }
+   //
+   //     }).
+   //     error(function(data, status, headers, config) {
+   //
+   //     $scope.data = FeedStorage.get();
+   //     $scope.msg = 'Offline Mode - An error occured:' + status;
+   //
+   //     $scope.title = $scope.data.feed.title;
+   //     $scope.description = $scope.data.feed.description;
+   //     $scope.link = $scope.data.feed.link;
+   //     $scope.feeds = $scope.data.feed.entries;
+   //
+   //     });
+   //
+   //     var page = 1;
+   //     // Define the number of the feed results in the page
+   //     var pageSize = 5;
+   //
+   //     $scope.paginationLimit = function(data) {
+   //     return pageSize * page;
+   //     };
+   //
+   //     $scope.hasMoreItems = function() {
+   //     return page < ($scope.feeds.length / pageSize);
+   //     };
+   //
+   //     $scope.showMoreItems = function() {
+   //     page = page + 1;
+   //     };
+   //
+   //     $scope.showDetail = function(index) {
+   //     var selectedItem = $scope.feeds[index];
+   //     FeedData.selectedItem = selectedItem;
+   //     $scope.ons.navigator.pushPage('feed.html', selectedItem);
+   //     }
+   //
+   //});
    //
     // RSS: Feed Controller
-    app.controller('FeedController', function($scope, FeedData) {
-        $scope.item = FeedData.selectedItem;
-
-        $scope.loadURL = function (url) {
-            //target: The target in which to load the URL, an optional parameter that defaults to _self. (String)
-            //_self: Opens in the Cordova WebView if the URL is in the white list, otherwise it opens in the InAppBrowser.
-            //_blank: Opens in the InAppBrowser.
-            //_blank: Opens in the system's web browser.
-            window.open(url,'_blank');
-        }
-
-        $scope.sharePost = function () {
-
-            var subject = $scope.item.title;
-            var message = $scope.item.content;
-            message = message.replace(/(<([^>]+)>)/ig,"");
-
-            var link = $scope.item.link;
-
-            //Documentation: https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
-            //window.plugins.socialsharing.share('Message', 'Subject', 'Image', 'Link');
-            window.plugins.socialsharing.share(message, subject, null, link);
-        }
-
-    });
-    
-    // About: About Controller
-    app.controller('AboutController', function($scope, $http, AboutData) {
-
-        $http({method: 'GET', url: AboutData.url}).
-        success(function(data, status, headers, config) {
-            $scope.about = data.result;
-        }).
-        error(function(data, status, headers, config) {
-
-        });
-
-        $scope.showDetail = function(index) {
-        var selectedItem = $scope.about[index];
-        AboutData.selectedItem = selectedItem;
-        $scope.ons.navigator.pushPage('member.html', selectedItem);
-        }
-
-    });
-    
-    // About: Member Controller
-    app.controller('MemberController', function($scope, AboutData) {
-        $scope.item = AboutData.selectedItem;
-    });
+    //app.controller('FeedController', function($scope, FeedData) {
+    //    $scope.item = FeedData.selectedItem;
+    //
+    //    $scope.loadURL = function (url) {
+    //        //target: The target in which to load the URL, an optional parameter that defaults to _self. (String)
+    //        //_self: Opens in the Cordova WebView if the URL is in the white list, otherwise it opens in the InAppBrowser.
+    //        //_blank: Opens in the InAppBrowser.
+    //        //_blank: Opens in the system's web browser.
+    //        window.open(url,'_blank');
+    //    }
+    //
+    //    $scope.sharePost = function () {
+    //
+    //        var subject = $scope.item.title;
+    //        var message = $scope.item.content;
+    //        message = message.replace(/(<([^>]+)>)/ig,"");
+    //
+    //        var link = $scope.item.link;
+    //
+    //        //Documentation: https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin
+    //        //window.plugins.socialsharing.share('Message', 'Subject', 'Image', 'Link');
+    //        window.plugins.socialsharing.share(message, subject, null, link);
+    //    }
+    //
+    //});
+    //
+    //// About: About Controller
+    //app.controller('AboutController', function($scope, $http, AboutData) {
+    //
+    //    $http({method: 'GET', url: AboutData.url}).
+    //    success(function(data, status, headers, config) {
+    //        $scope.about = data.result;
+    //    }).
+    //    error(function(data, status, headers, config) {
+    //
+    //    });
+    //
+    //    $scope.showDetail = function(index) {
+    //    var selectedItem = $scope.about[index];
+    //    AboutData.selectedItem = selectedItem;
+    //    $scope.ons.navigator.pushPage('member.html', selectedItem);
+    //    }
+    //
+    //});
+    //
+    //// About: Member Controller
+    //app.controller('MemberController', function($scope, AboutData) {
+    //    $scope.item = AboutData.selectedItem;
+    //});
 
 //
-    });
+    //});
 //
     // PLUGINS: Geolocation Controller
     app.controller('GeolocationController', function($scope) {
@@ -654,41 +654,41 @@ var app = {
         };
         
     });
+    //
+    //// Barcodescanner Controller
+    //app.controller('BarcodescannerController', function($scope) {
+    //
+    //    $scope.scan = function() {
+    //        cordova.plugins.barcodeScanner.scan(function(result) {
+    //            $scope.result = result;
+    //            $scope.$apply();
+    //        }, function(error) {
+    //            $scope.error = error;
+    //            $scope.$apply();
+    //        });
+    //    }
+    //
+    //});
     
-    // Barcodescanner Controller
-    app.controller('BarcodescannerController', function($scope) {
-        
-        $scope.scan = function() {
-            cordova.plugins.barcodeScanner.scan(function(result) {
-                $scope.result = result;
-                $scope.$apply();
-            }, function(error) {
-                $scope.error = error;
-                $scope.$apply();
-            });
-        }
-        
-    });
-    
-    // Filter
-    app.filter('partition', function($cacheFactory) {
-          var arrayCache = $cacheFactory('partition');
-          var filter = function(arr, size) {
-            if (!arr) { return; }
-            var newArr = [];
-            for (var i=0; i<arr.length; i+=size) {
-                newArr.push(arr.slice(i, i+size));        
-            }
-            var cachedParts;
-            var arrString = JSON.stringify(arr);
-            cachedParts = arrayCache.get(arrString+size); 
-            if (JSON.stringify(cachedParts) === JSON.stringify(newArr)) {
-              return cachedParts;
-            }
-            arrayCache.put(arrString+size, newArr);
-            return newArr;
-          };
-          return filter;
-        });
+    //// Filter
+    //app.filter('partition', function($cacheFactory) {
+    //      var arrayCache = $cacheFactory('partition');
+    //      var filter = function(arr, size) {
+    //        if (!arr) { return; }
+    //        var newArr = [];
+    //        for (var i=0; i<arr.length; i+=size) {
+    //            newArr.push(arr.slice(i, i+size));
+    //        }
+    //        var cachedParts;
+    //        var arrString = JSON.stringify(arr);
+    //        cachedParts = arrayCache.get(arrString+size);
+    //        if (JSON.stringify(cachedParts) === JSON.stringify(newArr)) {
+    //          return cachedParts;
+    //        }
+    //        arrayCache.put(arrString+size, newArr);
+    //        return newArr;
+    //      };
+    //      return filter;
+    //    });
 
 })();

@@ -19,26 +19,10 @@
                         <section class="home-grid">
                             <div class="center grid-menu">
 
-                                    <ons-button class="center" style="text-align:left; margin:20px;padding:10px; width:100%;" ><a onclick="window.open('{{item.link}}', 'target=_blank', 'location=yes'); return false;"style="font-size:20px;"><strong>{{item.title}}</strong><br/><i>Served: {{item.time}}</i></a></ons-button>
-                                    <!--<div class="grid-menu-item list__item list__item--tappable" ng-repeat="item in row" ng-click="showDetail(($parent.$index*row.length)+$index);">-->
-                                    <!--&lt;!&ndash;<ons-icon icon="{{item.icon}}"></ons-icon>&ndash;&gt;-->
-                                    <!--<div class="grid-menu-item-label"><a href="{{item.link}}">{{item.title}}</a></div>-->
-                                    <!--</div>-->
-
+                                    <a href="{{item.url}}" target="_blank" style="font-size:20px;"><ons-button class="center" style="text-align:left; margin:20px;padding:10px; width:100%;" ><strong>{{item.title}}</strong><br/><i>Served: {{item.time}}</i></ons-button></a>
                             </div>
                         </section>
-                        <!--<img ng-src="{{item.picture}}"alt="{{item.title}}" ng-click="showSearchDetail($index)"/>-->
                     </section>
-                <!--</ons-col>-->
-                <ons-col>
-                    <!--<section>-->
-                        <!--<h3 class="title" ng-click="showSearchDetail($index)">{{item.title}}</h3>-->
-                        <!--<p ng-model="letterLimit">{{item.body | limitTo:letterLimit  }}...</p>-->
-                        <!--<p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>-->
-                            <!--<span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>-->
-                        <!--</p>-->
-                    <!--</section>-->
-                </ons-col>
 
         </div>
     </section>

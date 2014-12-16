@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.1.10
+3 info using node@v0.10.25
+4 verbose node symlink /usr/bin/node
+5 verbose config Skipping project config: /home/jer/.npmrc. (matches userconfig)
+6 warn package.json jer@0.0.0 No repository field.
+7 warn package.json jer@0.0.0 No README data
+8 verbose install where, deps [ '/home/jer',
+8 verbose install   [ 'bower',
+8 verbose install     'cordova',
+8 verbose install     'express',
+8 verbose install     'generator-mocha',
+8 verbose install     'generator-phonegap',
+8 verbose install     'grunt-cli',
+8 verbose install     'johnny-five',
+8 verbose install     'phonegap',
+8 verbose install     'yo' ] ]
+9 verbose install where, peers [ '/home/jer', [] ]
+10 info preinstall jer@0.0.0
+11 verbose already installed skipping yo@~1.1.2 /home/jer
+12 verbose already installed skipping bower@~1.3.12 /home/jer
+13 verbose already installed skipping grunt-cli@~0.1.13 /home/jer
+14 verbose already installed skipping cordova@~4.1.2 /home/jer
+15 verbose already installed skipping express@~4.10.1 /home/jer
+16 verbose already installed skipping johnny-five@~0.8.29 /home/jer
+17 verbose already installed skipping generator-mocha@~0.1.6 /home/jer
+18 verbose already installed skipping generator-phonegap@~0.1.2 /home/jer
+19 verbose already installed skipping phonegap@~3.6.3-0.22.5 /home/jer
+20 silly install resolved []
+21 info build /home/jer
+22 verbose linkStuff [ false, false, false, '/home' ]
+23 info linkStuff jer@0.0.0
+24 verbose linkBins jer@0.0.0
+25 verbose linkMans jer@0.0.0
+26 verbose rebuildBundles jer@0.0.0
+27 verbose rebuildBundles [ '.bin',
+27 verbose rebuildBundles   'bower',
+27 verbose rebuildBundles   'cordova',
+27 verbose rebuildBundles   'express',
+27 verbose rebuildBundles   'generator-angular-fullstack',
+27 verbose rebuildBundles   'generator-mocha',
+27 verbose rebuildBundles   'generator-phonegap',
+27 verbose rebuildBundles   'grunt-cli',
+27 verbose rebuildBundles   'johnny-five',
+27 verbose rebuildBundles   'phonegap',
+27 verbose rebuildBundles   'yo' ]
+28 verbose rebuild bundle /home/jer/node_modules/generator-angular-fullstack
+29 info build /home/jer/node_modules/generator-angular-fullstack
+30 info preinstall generator-angular-fullstack@2.0.13
+31 verbose linkStuff [ false, false, false, '/home/jer/node_modules' ]
+32 info linkStuff generator-angular-fullstack@2.0.13
+33 verbose linkBins generator-angular-fullstack@2.0.13
+34 verbose linkMans generator-angular-fullstack@2.0.13
+35 verbose rebuildBundles generator-angular-fullstack@2.0.13
+36 verbose rebuildBundles [ 'chalk',
+36 verbose rebuildBundles   'generator-ng-component',
+36 verbose rebuildBundles   'wiredep',
+36 verbose rebuildBundles   'yeoman-generator' ]
+37 info install generator-angular-fullstack@2.0.13
+38 info postinstall generator-angular-fullstack@2.0.13
+39 info install jer@0.0.0
+40 info postinstall jer@0.0.0
+41 info prepublish jer@0.0.0
+42 warn unmet dependency /home/jer/node_modules/generator-phonegap/node_modules/phonegap/node_modules/phonegap-build requires colors@'0.6.x' but will load
+42 warn unmet dependency /home/jer/node_modules/generator-phonegap/node_modules/phonegap/node_modules/colors,
+42 warn unmet dependency which is version 0.6.0-1
+43 warn unmet dependency /home/jer/node_modules/generator-phonegap/node_modules/phonegap/node_modules/prompt/node_modules/winston requires colors@'0.x.x' but will load
+43 warn unmet dependency /home/jer/node_modules/generator-phonegap/node_modules/phonegap/node_modules/colors,
+43 warn unmet dependency which is version 0.6.0-1
+44 warn unmet dependency /home/jer/node_modules/phonegap/node_modules/phonegap-build requires colors@'0.6.x' but will load
+44 warn unmet dependency /home/jer/node_modules/phonegap/node_modules/colors,
+44 warn unmet dependency which is version 0.6.0-1
+45 warn unmet dependency /home/jer/node_modules/phonegap/node_modules/prompt/node_modules/winston requires colors@'0.x.x' but will load
+45 warn unmet dependency /home/jer/node_modules/phonegap/node_modules/colors,
+45 warn unmet dependency which is version 0.6.0-1
+46 verbose stack Error: The package yo does not satisfy its siblings' peerDependencies requirements!
+46 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
+46 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
+46 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+46 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+46 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+46 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+46 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+46 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+46 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+46 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+47 verbose cwd /home/jer/Desktop/TC-master
+48 error Linux 3.13.0-40-generic
+49 error argv "node" "/usr/local/bin/npm" "install"
+50 error node v0.10.25
+51 error npm  v2.1.10
+52 error code EPEERINVALID
+53 error peerinvalid The package yo does not satisfy its siblings' peerDependencies requirements!
+53 error peerinvalid Peer generator-mocha@0.1.6 wants yo@>=1.0.0
+53 error peerinvalid Peer generator-phonegap@0.1.2 wants yo@>=1.0.0-rc.1
+53 error peerinvalid Peer generator-angular-fullstack@2.0.13 wants yo@>=1.2.0
+54 verbose exit [ 1, true ]

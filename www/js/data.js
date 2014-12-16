@@ -66,7 +66,6 @@ sensationApp.factory('MenuData', function(){
             icon: 'home',
             page: 'home.html'
         },
-
         {
             title: 'Menu',
             icon: 'search',
@@ -123,30 +122,6 @@ sensationApp.factory('MapData', function(){
     return data;
 });
 
-// Gallery Data: Gallery configuration
-//sensationApp.factory('GalleryData', function(){
-//    var data = {};
-//
-//    data.items = [
-//        {
-//            label: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-//            src: 'img/gallery-1.jpg',
-//            location: 'New York, June 2014'
-//        },
-//        {
-//            label: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-//            src: 'img/gallery-2.jpg',
-//            location: 'Athens, August 2013'
-//        },
-//        {
-//            label: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//            src: 'img/gallery-3.jpg',
-//            location: 'Tokyo, May 2013'
-//        }
-//    ];
-//
-//    return data;
-//});
 //
 //// Products Data: JSON Products configuration
 //sensationApp.factory('ProductsData', function(){
@@ -349,39 +324,7 @@ sensationApp.factory('PluginsData', function(){
     
     return data;
 });
-//
-//// Settings Data: Settings configuration
-//sensationApp.factory('SettingsData', function(){
-//    var data = {};
-//
-//    data.items = {
-//        options: [
-//        {
-//           name: 'First Setting',
-//           value: true
-//        },
-//        {
-//           name: 'Second Setting',
-//           value: false
-//        },
-//        {
-//           name: 'Third Setting',
-//           value: false
-//        },
-//        {
-//           name: 'Fourth Setting',
-//           value: false
-//        },
-//        {
-//           name: 'Fifth Setting',
-//           value: false
-//        }],
-//        range:30
-//    };
-//
-//    return data;
-//});
-//
+
 //// RSS Data: Feeds configuration
 //sensationApp.factory('FeedData', function(){
 //

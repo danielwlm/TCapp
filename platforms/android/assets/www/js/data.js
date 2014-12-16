@@ -66,16 +66,7 @@ sensationApp.factory('MenuData', function(){
             icon: 'home',
             page: 'home.html'
         },
-        //{
-        //    title: 'posts',
-        //    icon: 'square-o',
-        //    page: 'posts.html'
-        //},
-        //{
-        //    title: 'Latest Deals',
-        //    icon: 'rss',
-        //    page: 'feeds.html'
-        //},
+
         {
             title: 'Menu',
             icon: 'search',
@@ -87,11 +78,11 @@ sensationApp.factory('MenuData', function(){
         //    //page: 'modal.html'
         //    page: 'https://tabachines.staging.wpengine.com/order-now/'
         //},
-        {
-            title: 'Contact',
-            icon: 'envelope-o',
-            page: 'contact.html'
-        },
+        //{
+        //    title: 'Contact',
+        //    icon: 'envelope-o',
+        //    page: 'contact.html'
+        //},
         {
             title: 'Map & Directions',
             icon: 'map-marker',
@@ -175,84 +166,84 @@ sensationApp.factory('MapData', function(){
 
 // FoodMenu Data: JSON FoodMenu configuration
 sensationApp.factory('FoodMenuData', function(){
-    var data = { url: 'json/loop.json', letterLimit: 20 };
+    var data = { url: 'json/loop.json' };
 
     return data;
 
 });
-// DrinkMenu Data: JSON FoodMenu configuration
-sensationApp.factory('DrinkMenuData', function(){
-
-    var data = { url: 'json/drinks.json', letterLimit: 20 };
-
-    return data;
-});
-
-// sideMenu Data: JSON FoodMenu configuration
-sensationApp.factory('SideMenuData', function(){
-
-    var data = { url: 'json/sides.json', letterLimit: 20 };
-
-    return data;
-});
-
-// Posts Data: JSON Wordpress Posts configuration
-sensationApp.factory('PostsData', function(){
-    
-    /* (For DEMO purposes) Local JSON data */
-    //var data = { url: 'json/wordpress.json' };
-    
-    /* Set your URL as you can see in the following example */
-   // var data = { url: 'https://tabachines.staging.wpengine.com/?json=get_recent_posts' };
-    
-    /* With user-friendly permalinks configured */
-     var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts' };
-    
-    return data;
-});
-
-// Server Posts Data (Server side pagination with AngularJS)
-sensationApp.factory('ServerPostsData', function(){
-    
-    /* (For DEMO purposes) Local JSON data */
-    //var data = { url: 'json/serverposts&' };
-    
-    /* Set your URL as you can see in the following example */
-    /* NOTE: In case of the default permalinks, you should add '&' at the end of the url */
-    //var data = { url: 'http://tabachines.staging.wpengine.com/?json=get_recent_posts&' };
-    
-    /* With user-friendly permalinks configured */
-    /* NOTE: In case of the user-friendly permalinks, you should add '?' at the end of the url */
-    var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts?' };
-    
-    return data;
-});
-
-// Categories Data: JSON Categories configuration
-sensationApp.factory('CategoriesData', function(){
-    
-    /* (For DEMO purposes) Local JSON data */
-    var data = { url: 'json/categories.json',
-                 category_url: 'json/category' };
-    
-    /* Set your URL as you can see in the following example */
-    // var data = { url: 'YourWordpressURL/?json=get_category_index',
-    //             category_url: 'YourWordpressURL/?json=get_category_posts&' };
-    
-    /* With user-friendly permalinks configured */
-    // var data = { url: 'YourWordpressURL/api/get_category_index',
-    //             category_url: 'YourWordpressURL/api/get_category_posts?' };
-    
-    return data;
-});
-
-// About Data: JSON News configuration
-sensationApp.factory('AboutData', function(){
-    
-    var data = { url: 'json/about.json' };
-    
-    return data;
-});
+//// DrinkMenu Data: JSON FoodMenu configuration
+//sensationApp.factory('DrinkMenuData', function(){
+//
+//    var data = { url: 'json/drinks.json', letterLimit: 20 };
+//
+//    return data;
+//});
+//
+//// sideMenu Data: JSON FoodMenu configuration
+//sensationApp.factory('SideMenuData', function(){
+//
+//    var data = { url: 'json/sides.json', letterLimit: 20 };
+//
+//    return data;
+//});
+//
+//// Posts Data: JSON Wordpress Posts configuration
+//sensationApp.factory('PostsData', function(){
+//
+//    /* (For DEMO purposes) Local JSON data */
+//    //var data = { url: 'json/wordpress.json' };
+//
+//    /* Set your URL as you can see in the following example */
+//   // var data = { url: 'https://tabachines.staging.wpengine.com/?json=get_recent_posts' };
+//
+//    /* With user-friendly permalinks configured */
+//     var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts' };
+//
+//    return data;
+//});
+//
+//// Server Posts Data (Server side pagination with AngularJS)
+//sensationApp.factory('ServerPostsData', function(){
+//
+//    /* (For DEMO purposes) Local JSON data */
+//    //var data = { url: 'json/serverposts&' };
+//
+//    /* Set your URL as you can see in the following example */
+//    /* NOTE: In case of the default permalinks, you should add '&' at the end of the url */
+//    //var data = { url: 'http://tabachines.staging.wpengine.com/?json=get_recent_posts&' };
+//
+//    /* With user-friendly permalinks configured */
+//    /* NOTE: In case of the user-friendly permalinks, you should add '?' at the end of the url */
+//    var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts?' };
+//
+//    return data;
+//});
+//
+//// Categories Data: JSON Categories configuration
+//sensationApp.factory('CategoriesData', function(){
+//
+//    /* (For DEMO purposes) Local JSON data */
+//    var data = { url: 'json/categories.json',
+//                 category_url: 'json/category' };
+//
+//    /* Set your URL as you can see in the following example */
+//    // var data = { url: 'YourWordpressURL/?json=get_category_index',
+//    //             category_url: 'YourWordpressURL/?json=get_category_posts&' };
+//
+//    /* With user-friendly permalinks configured */
+//    // var data = { url: 'YourWordpressURL/api/get_category_index',
+//    //             category_url: 'YourWordpressURL/api/get_category_posts?' };
+//
+//    return data;
+//});
+//
+//// About Data: JSON News configuration
+//sensationApp.factory('AboutData', function(){
+//
+//    var data = { url: 'json/about.json' };
+//
+//    return data;
+//});
 
 // NVD3Data Data: JNVD3Data configuration
 sensationApp.factory('NVD3Data', function(){
@@ -347,61 +338,62 @@ sensationApp.factory('PluginsData', function(){
             title: 'Geolocation Plugin',
             icon: 'location-arrow',
             page: 'geolocation.html'
-        },
-        { 
-            title: 'Barcode Scanner',
-            icon: 'barcode',
-            page: 'barcodescanner.html'
         }
+        //,
+        //{
+        //    title: 'Barcode Scanner',
+        //    icon: 'barcode',
+        //    page: 'barcodescanner.html'
+        //}
     ]; 
     
     return data;
 });
-
-// Settings Data: Settings configuration
-sensationApp.factory('SettingsData', function(){
-    var data = {};
-    
-    data.items = {
-        options: [
-        {
-           name: 'First Setting',
-           value: true
-        }, 
-        {
-           name: 'Second Setting',
-           value: false
-        }, 
-        {
-           name: 'Third Setting',
-           value: false
-        }, 
-        {
-           name: 'Fourth Setting',
-           value: false
-        }, 
-        {
-           name: 'Fifth Setting',
-           value: false
-        }],
-        range:30
-    };
-
-    return data;
-});
-
-// RSS Data: Feeds configuration
-sensationApp.factory('FeedData', function(){
-    
-    var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts' };
-    
-    return data;
-});
-
-// FEED Data Structure: JSON FEED Data Structure configuration
-sensationApp.factory('FeedPluginData', function(){
-    
-   // var data = { url: 'json/structure.json' };
-    
-    return data;
-});
+//
+//// Settings Data: Settings configuration
+//sensationApp.factory('SettingsData', function(){
+//    var data = {};
+//
+//    data.items = {
+//        options: [
+//        {
+//           name: 'First Setting',
+//           value: true
+//        },
+//        {
+//           name: 'Second Setting',
+//           value: false
+//        },
+//        {
+//           name: 'Third Setting',
+//           value: false
+//        },
+//        {
+//           name: 'Fourth Setting',
+//           value: false
+//        },
+//        {
+//           name: 'Fifth Setting',
+//           value: false
+//        }],
+//        range:30
+//    };
+//
+//    return data;
+//});
+//
+//// RSS Data: Feeds configuration
+//sensationApp.factory('FeedData', function(){
+//
+//    var data = { url: 'http://tabachines.staging.wpengine.com/api/get_recent_posts' };
+//
+//    return data;
+//});
+//
+//// FEED Data Structure: JSON FEED Data Structure configuration
+//sensationApp.factory('FeedPluginData', function(){
+//
+//   // var data = { url: 'json/structure.json' };
+//
+//    return data;
+//});

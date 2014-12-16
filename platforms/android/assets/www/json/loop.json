@@ -15,7 +15,7 @@
       "title":"Lunch Menu",
       "time":"11am-3pm",
       "subtitle":"Ole` Mole",
-      "link":"http://tabachines.staging.wpengine.com/menu/lunch/",
+      "url":"http://tabachines.staging.wpengine.com/menu/lunch/",
       "image":"img/limes.jpg"
     },
     {
@@ -23,7 +23,7 @@
       "title":"Dinner Menu",
       "time":"3pm-11pm",
       "subtitle":"Ole` Mole",
-      "link":"http://tabachines.staging.wpengine.com/menu/dinner/",
+      "url":"http://tabachines.staging.wpengine.com/menu/dinner/",
       "image":"img/limes.jpg",
       "result": [
         {
@@ -104,7 +104,7 @@
       "title":"Sides Menu",
       "time":" All Day",
       "subtitle": "Ole` Mole",
-      "link":"http://tabachines.staging.wpengine.com/menu/dinner/",
+      "url":"http://tabachines.staging.wpengine.com/menu/dinner/",
       "image":"img/limes.jpg",
       "result": [
         {
@@ -157,7 +157,7 @@
       "title":"Desserts Menu",
       "time":"11am-11pm",
       "subtitle": "Ole` Mole",
-      "link":"http://tabachines.staging.wpengine.com/menu/dinner/",
+      "url":"http://tabachines.staging.wpengine.com/menu/dinner/",
       "image":"img/limes.jpg",
       "result":[
         {
@@ -189,7 +189,7 @@
       "title":"Drinks Menu",
       "time":" All Day",
       "subtitle":"Ole` Mole",
-      "link":"http://tabachines.staging.wpengine.com/menu/drinks/",
+      "url":"http://tabachines.staging.wpengine.com/menu/drinks/",
       "image":"img/limes.jpg",
       "result": [
         {
