@@ -42,8 +42,6 @@ var app = {
                 e.preventDefault();
 //  Method to close Phonegap application
                 navigator.app.exitApp();
-
-
             } else {
                 // Method to go back to previous page
                 navigator.app.backHistory();
@@ -81,19 +79,14 @@ var app = {
         //        window.open(linktarget, "_system");
         //    }
         //});
-
       //  Open any external link with InAppBrowser Plugin
         $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
-
             e.preventDefault();
             var $this = $(this);
             var target = $this.data('inAppBrowser') || '_blank';
             //var ref = window.open('http://apache.org', '_blank', 'location=yes');
-
             window.open($this.attr('href'), target);
-
         });
-
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
             console.log("window.open works well");
