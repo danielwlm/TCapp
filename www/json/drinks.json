@@ -1,0 +1,64 @@
+{
+  "id": 1,
+  "total": 8,
+  "title":"Drinks Menu",
+  "result": [
+    {
+      "id": 1,
+      "picture": "img/demo.png",
+      "title": "Orange Juice",
+      "body": "Our fresh orange juice is squeezed fresh when you order. We offer two sizes small and large.",
+      "tags": ["Fresh Drinks", "Home Made"],
+      "price":["$4.5", "$5.5"]
+    }, {
+      "id": 2,
+      "picture": "img/demo.png",
+      "title": "Cafe' De Olla",
+      "body": "Our traditional french press coffee is the perfect ingredient to complete your meal. We offer two sizes small and large as well as a traditional Piloncillo.",
+      "tags": ["Tag4", "Tag5", "Tag6", "Tag7"],
+      "price": ["$4.5", "$5.5"]
+    }, {
+      "id": 3,
+      "picture": "img/demo.png",
+      "title": "Mexican Hot Chocolate",
+      "body": "Home made mexican chocolate blend.",
+      "tags": ["Tag1", "Tag2", "Tag3"],
+      "price":["$3.5"]
+    }, {
+      "id": 4,
+      "picture": "img/demo.png",
+      "title": "Traditional Hot Tea",
+      "body": "Our hot tea is the perfect addition to any meal. Our tea comes loose leave, with the option of Mint, Chamomile, or Lemongrass.",
+      "tags": ["Tag4", "Tag5", "Tag6", "Tag7"],
+      "price":["$4.5"]
+    }, {
+      "id": 5,
+      "picture": "img/demo.png",
+      "title": "Iced Tea",
+      "body": "Our iced tea is made from fresh lemongrass. This is a great addition to any meal.",
+      "tags": ["Tag8", "Tag9", "Tag10"],
+      "price":["$3.5"]
+    }, {
+      "id": 6,
+      "picture": "img/demo.png",
+      "title": "Kale",
+      "body": "Our Kale drink is not only a healthy alternative to soda but it also offers a fresh taste unlike other drink alternatives. We blend our Kale with fruits and traditional chia seeds.",
+      "tags": ["Tag8", "Tag9", "Tag10"],
+      "price":["$3.5"]
+    }, {
+      "id": 7,
+      "picture": "img/demo.png",
+      "title": "Tomatillo",
+      "body": "Our Tomatillo drink is unlike anyhting you have ever tasted before. We use fresh tomatillo, apples, and mint to refresh your taste buds.",
+      "tags": ["Tag8", "Tag9", "Tag10"],
+      "price":["$4.5"]
+    }, {
+      "id": 8,
+      "picture": "img/demo.png",
+      "title": "Jamaica",
+      "body": "Our traditional Jamaica is a sweet alternative to soda and pairs well with some of our more spicy items. The drink is made from the tropical Hibiscus flower.",
+      "tags": ["Tag8", "Tag9", "Tag10"],
+      "price":["$3.5"]
+    }
+  ]
+}

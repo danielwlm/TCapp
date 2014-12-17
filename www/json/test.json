@@ -1,0 +1,269 @@
+{
+  "drinks":[
+    {
+      "id": 1,
+      "total": 8,
+      "title": "Drinks Menu",
+      "result": [
+        {
+          "id": 1,
+          "picture": "img/demo.png",
+          "title": "Orange Juice",
+          "body": "Our fresh orange juice is squeezed fresh when you order. We offer two sizes small and large.",
+          "tags": [
+            "Fresh Drinks",
+            "Home Made"
+          ],
+          "price": [
+            "$4.5",
+            "$5.5"
+          ]
+        },
+        {
+          "id": 2,
+          "picture": "img/demo.png",
+          "title": "Cafe' De Olla",
+          "body": "Our traditional french press coffee is the perfect ingredient to complete your meal. We offer two sizes small and large as well as a traditional Piloncillo.",
+          "tags": [
+            "Tag4",
+            "Tag5",
+            "Tag6",
+            "Tag7"
+          ],
+          "price": [
+            "$4.5",
+            "$5.5"
+          ]
+        },
+        {
+          "id": 3,
+          "picture": "img/demo.png",
+          "title": "Mexican Hot Chocolate",
+          "body": "Home made mexican chocolate blend.",
+          "tags": [
+            "Tag1",
+            "Tag2",
+            "Tag3"
+          ],
+          "price": ["$3.5"]
+        },
+        {
+          "id": 4,
+          "picture": "img/demo.png",
+          "title": "Traditional Hot Tea",
+          "body": "Our hot tea is the perfect addition to any meal. Our tea comes loose leave, with the option of Mint, Chamomile, or Lemongrass.",
+          "tags": [
+            "Tag4",
+            "Tag5",
+            "Tag6",
+            "Tag7"
+          ],
+          "price": ["$4.5"]
+        },
+        {
+          "id": 5,
+          "picture": "img/demo.png",
+          "title": "Iced Tea",
+          "body": "Our iced tea is made from fresh lemongrass. This is a great addition to any meal.",
+          "tags": [
+            "Tag8",
+            "Tag9",
+            "Tag10"
+          ],
+          "price": ["$3.5"]
+        },
+        {
+          "id": 6,
+          "picture": "img/demo.png",
+          "title": "Kale",
+          "body": "Our Kale drink is not only a healthy alternative to soda but it also offers a fresh taste unlike other drink alternatives. We blend our Kale with fruits and traditional chia seeds.",
+          "tags": [
+            "Tag8",
+            "Tag9",
+            "Tag10"
+          ],
+          "price": ["$3.5"]
+        },
+        {
+          "id": 7,
+          "picture": "img/demo.png",
+          "title": "Tomatillo",
+          "body": "Our Tomatillo drink is unlike anything you have ever tasted before. We use fresh tomatillo, apples, and mint to refresh your taste buds.",
+          "tags": [
+            "Tag8",
+            "Tag9",
+            "Tag10"
+          ],
+          "price": ["$4.5"]
+        },
+        {
+          "id": 8,
+          "picture": "img/demo.png",
+          "title": "Jamaica",
+          "body": "Our traditional Jamaica is a sweet alternative to soda and pairs well with some of our more spicy items. The drink is made from the tropical Hibiscus flower.",
+          "tags": [
+            "Tag8",
+            "Tag9",
+            "Tag10"
+          ],
+          "price": ["$3.5"]
+        }
+      ]
+    }
+  ]
+
+
+,
+  "sides":[{
+    "id": 2,
+    "total": 10,
+    "title":"Sides and Appetizers Dishes",
+    "sub-title":"Side Appetizers and Desserts",
+    "result": [
+      {
+        "id": 1,
+        "picture": "img/demo.png",
+        "title": "BLACK BEANS",
+        "body": "Traditional black beans",
+        "tags": ["Side", "Black Beans"],
+        "price":["$3"]
+      }, {
+        "id": 2,
+        "picture": "img/demo.png",
+        "title": "GREEN RICE",
+        "body": "Fresh green rice",
+        "tags": ["Side", "Rice"],
+        "price": ["$3"]
+      }, {
+        "id": 3,
+        "picture": "img/demo.png",
+        "title": "HOUSE SALADS",
+        "body": "Fresh house salad served daily",
+        "tags": ["Side", "Salad"],
+        "price":["$5"]
+      }, {
+        "id": 4,
+        "picture": "img/demo.png",
+        "title": "PICO DE GALLO",
+        "body": "Traditional Pico De Gallo",
+        "tags": ["Side", "Pico De Gallo"],
+        "price":["$3"]
+      }, {
+        "id": 5,
+        "picture": "img/demo.png",
+        "title": "AVOCADO",
+        "body": "FRESH AVOCADO",
+        "tags": ["Side", "Avocado"],
+        "price":["$3"]
+      }, {
+        "id": 6,
+        "picture": "img/demo.png",
+        "title": "TORTILLAS",
+        "body": "Traditional Corn Tortillas",
+        "tags": ["Side", "Corn", "Tortillas"],
+        "price":["$2"]
+      }, {
+        "id": 7,
+        "picture": "img/demo.png",
+        "title": "ROASTED CORN MARIA GORDA",
+        "body": "Quince sauce and berries.",
+        "tags": ["Desserts", "Corn Gorda"],
+        "price":["$8"]
+      }, {
+        "id": 8,
+        "picture": "img/demo.png",
+        "title": "DULCE DE CALABAZA",
+        "body": "One of the most iconic sweet avors in Mexico’s traditional desserts, dulce de calabaza with vanilla ice cream.",
+        "tags": ["Desserts", "Traditional Dessert", "Sweet Vanilla"],
+        "price":["$8"]
+      }, {
+        "id": 9,
+        "picture": "img/demo.png",
+        "title": "ARROZ CON LECHE",
+        "body": "Warm rice pudding, syrupy apple slices and pecan pieces.",
+        "tags": ["Dessert", "Rice Pudding"],
+        "price":["$8"]
+      }
+    ]
+  }]
+,
+  "dinner":[{
+    "id": 3,
+    "total": 10,
+    "title":"Dinner Menu",
+    "sub-title":"Ahogadas, Jamburgesas & Tostadas",
+    "result": [
+      {
+        "id": 1,
+        "picture": "img/demo.png",
+        "title": "TORTAS AHOGADAS",
+        "body": "Bean paste, carnitas, kale, and salsa with habanero onions.",
+        "tags": ["Dinner", "Tortas", "kale"],
+        "price":["$10"]
+      }, {
+        "id": 2,
+        "picture": "img/demo.png",
+        "title": "JAMBURGESAS",
+        "body": "Bean paste, cheese crust, cabbage slaw, shaved veggies, roasted tomatoes and serrano. Green crema fresca.",
+        "tags": ["Tag4", "Tag5", "Tag6", "Tag7"],
+        "price": ["$11"]
+      }, {
+        "id": 3,
+        "picture": "img/demo.png",
+        "title": "SALMON TOSTADAS",
+        "body": "House cured salmon, fresh made corn tostadas, crema fresca, and arugula with olives pico de gallo.",
+        "tags": ["Tag1", "Tag2", "Tag3"],
+        "price":["$14"]
+      }, {
+        "id": 4,
+        "picture": "img/demo.png",
+        "title": "TRADITIONAL MOLE",
+        "body": "Choice of grilled chicken breast or grilled pork with habanero pickled onions. Green rice with banana slices. Warm corn tortillas.",
+        "tags": ["Tag4", "Tag5", "Tag6", "Tag7"],
+        "price":["$19"]
+      }, {
+        "id": 5,
+        "picture": "img/demo.png",
+        "title": "ENCHILADAS DE M’AMA",
+        "body": "Salsa de M’ama, queso fresco, pickled vegetables, crumbled queso cotija. Romaine and plantains",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$17"]
+      }, {
+        "id": 6,
+        "picture": "img/demo.png",
+        "title": "COCHINITA PIBIL",
+        "body": "Red coleslaw, green rice with black beans, plantains, pickled onions, habanero salsa. Warm corn tortillas..",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$19"]
+      }, {
+        "id": 7,
+        "picture": "img/demo.png",
+        "title": "GRILLED FILLET MIGNON",
+        "body": "Arugula salad and deconstructed roasted salsa. Warm corn tortillas.",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$23"]
+      }, {
+        "id": 8,
+        "picture": "img/demo.png",
+        "title": "CARNE EN SU JUGO",
+        "body": "Frijoles de la olla, grilled onions, bacon, avocado, radishes and cilantro. Warm corn tortillas.",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$15"]
+      }, {
+        "id": 9,
+        "picture": "img/demo.png",
+        "title": "PAN SEARED SEABASS WITH ROASTED CORN",
+        "body": "Roasted salsa. Warm corn tortillas.",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$21"]
+      }, {
+        "id": 10,
+        "picture": "img/demo.png",
+        "title": "GRILLED CHIPOTLE SHRIMP",
+        "body": "Fideo pasta, queso fresco, avocado, cilantro, lime.",
+        "tags": ["Tag8", "Tag9", "Tag10"],
+        "price":["$21"]
+      }
+    ]
+  }]
+}
