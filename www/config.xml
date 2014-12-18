@@ -44,6 +44,9 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
+
+    <gap:plugin name="com.ohh2ahh.plugins.appavailability" />
+
     <gap:splash src="splash.png" />
 
     <gap:plugin name="org.apache.cordova.device" />

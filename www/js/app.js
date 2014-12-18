@@ -178,7 +178,7 @@ var app = {
             };
         };
 
-        $('.twiterNav').click(function() {
+        $('.twitterNav').click(function() {
             window.open('twitter://user?screen_name=xerxesnoble', '_system', 'location=yes');
         });
         //
