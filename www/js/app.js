@@ -254,15 +254,15 @@ var app = {
     app.controller('FoodMenuController', function($scope, $http, FoodMenuData) {
 
 // Open any external link with InAppBrowser Plugin
-//        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
-//
-//            e.preventDefault();
-//            var $this = $(this);
-//            var target = $this.data('inAppBrowser') || '_blank';
-//
-//            window.open($this.attr('href'), target);
-//
-//        });
+        $(document).on('click', 'a[href^=http], a[href^=https]', function(e){
+
+            e.preventDefault();
+            var $this = $(this);
+            var target = $this.data('inAppBrowser') || '_system';
+
+            window.open($this.attr('href'), target);
+
+        });
 
         $scope.food = [];
 
