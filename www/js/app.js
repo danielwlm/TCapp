@@ -165,7 +165,7 @@ var app = {
 
             //alert('This is a Android!');
 
-           twitterCheck = function() {
+          twitterCheck = function() {
                 alert('This is a Android Twitter Alert!');
                 var now = new Date().valueOf();
 
